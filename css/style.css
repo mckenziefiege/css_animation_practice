@@ -3,48 +3,47 @@ body {
   font-size: 50px;
   background-color: #eee;
 }
-
-.heading-1 {
-  color: green;
-  margin: 100px;
+.container {
   text-align: center;
-  animation: fromLeft 1.5s;
+}
+.align-and-margin {
+  text-align: center;
+  margin: 100px;
 }
 
-.heading-2 {
-  margin: 100px;
-  text-align: center;
-  color: blue;
-  animation: fromRight 1.5s;
+.heading-1, .image-1{
+  color: #009999;
+  animation: fromLeft 1.5s ease-in;
 }
 
-.heading-3 {
-  margin: 100px;
-  text-align: center;
-  color: orange;
-  animation: fromBottom 1.5s;
+.heading-2, .image-2 {
+  color: #00cc66;
+  animation: fromRight 1.5s ease-in;
 }
 
-.heading-4 {
-  margin: 100px;
-  text-align: center;
-  color: pink;
-  transition: transform .3s;
+.heading-3, .image-3 {
+  color: #ff9966;
+  animation: fromBottom 1.5s ease-in;
+}
+
+.heading-4, .image-4 {
+  color: #9999ff;
+  transition: transform .5s ease-in;
   cursor: pointer;
 }
 
-.heading-4:hover {
-  transform: translateY(-1.5rem) scale(1.03);
+.heading-4:hover, .image-4:hover {
+  transform: translateY(-50px) scale(1.03);
 }
 
 @keyframes fromLeft {
   0% {
     opacity: 0;
-    transform: translate(-200px);
+    transform: translate(-300px);
   }
-  50% {
+  80% {
     opacity: .7;
-    transform: translate(10px);
+    transform: translate(20px);
   }
   100% {
     opacity: 1;
@@ -55,11 +54,11 @@ body {
 @keyframes fromRight {
   0% {
     opacity: 0;
-    transform: translate(200px);
+    transform: translate(300px);
   }
-  50% {
+  80% {
     opacity: .7;
-    transform: translate(-10px);
+    transform: translate(-20px);
   }
   100% {
     opacity: 1;
@@ -70,7 +69,7 @@ body {
 @keyframes fromBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
