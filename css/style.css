@@ -1,0 +1,79 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  background-color: #eee;
+}
+
+.heading-1 {
+  color: green;
+  margin: 100px;
+  text-align: center;
+  animation: fromLeft 1.5s;
+}
+
+.heading-2 {
+  margin: 100px;
+  text-align: center;
+  color: blue;
+  animation: fromRight 1.5s;
+}
+
+.heading-3 {
+  margin: 100px;
+  text-align: center;
+  color: orange;
+  animation: fromBottom 1.5s;
+}
+
+.heading-4 {
+  margin: 100px;
+  text-align: center;
+  color: pink;
+  transition: transform .3s;
+  cursor: pointer;
+}
+
+.heading-4:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-200px);
+  }
+  50% {
+    opacity: .7;
+    transform: translate(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translate(200px);
+  }
+  50% {
+    opacity: .7;
+    transform: translate(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
